@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "9d7e74bd-566e-411f-93db-508e97a57d89",
+		"name": "store-management-module",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29tIiwiaWF0IjoxNjAxNTU2MDIzLCJleHAiOjE2MDE1NTk2MjMsInN1YiI6IjIifQ.iOfvvlEfLRLiO54nkD89HCX2V-p9Tprxz4TolyiiK3Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "orderId",
+							"value": "1601-556066-9841",
+							"type": "text"
+						},
+						{
+							"key": "productId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "companyId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:4000/api/order/return",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"order",
+						"return"
+					],
+					"query": [
+						{
+							"key": "products",
+							"value": "{\"3\":{discount: 10}}",
+							"disabled": true
+						},
+						{
+							"key": "buyerId",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "currency",
+							"value": "INR",
+							"disabled": true
+						},
+						{
+							"key": "count",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29tIiwiaWF0IjoxNjAxNTQ0NzA2LCJleHAiOjE2MDE1NDgzMDYsInN1YiI6IjIifQ.F59txdbWTtPtFlef9wsF9QNSPFfr9d6PDThB0lhN0qI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "companyId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "productId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "count",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "contractId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "totalBoxes",
+							"value": "2",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:4000/api/product/create",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"product",
+						"create"
+					],
+					"query": [
+						{
+							"key": "companyId",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "productId",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "count",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-loyaltypoints",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
