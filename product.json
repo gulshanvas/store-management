@@ -1,0 +1,42 @@
+{
+  "products" : [
+    {
+    
+      "id": 1,
+      "name": "ABC",
+      "nature": "PERISHABLE"
+    },
+    {
+      "id": 2,
+      "name": "MNO",
+      "nature": "NONPERISHABLE",
+      "refundAllowed" : "NO"
+    }
+  ],
+  
+  "companies" : [
+     {
+       "id": 1,
+      "name" : "A",
+      "LOCATION" : "MUMBAI"
+    },
+    {
+      "id": 2,
+      "name" : "B",
+      "LOCATION" : "PUNE"
+    }
+  ],
+
+  "contracts" : [
+    {
+      "id" : 1,
+      "piecePerBox": 10,
+      "refundAllowed" : "YES"
+    },
+    {
+      "id" : 2,
+      "piecePerBox": 20,
+      "refundAllowed" : "NO"
+    }
+  ]
+}
